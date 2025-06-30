@@ -1,0 +1,235 @@
+.saved-card {
+  transition: box-shadow 0.2s;
+}
+
+.saved-card:hover {
+  box-shadow: 0 4px 24px rgba(60, 60, 60, 0.08);
+  background: #f0f4f8;
+}
+
+.saved-img-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  color: rgba(128, 128, 128, 0.637);
+}
+
+.saved-img-wrapper img {
+  height: 180px;
+}
+
+.move-cart-btn {
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  color: blue;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.feature-item {
+  background: none;
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  background: rgb(203, 204, 206);
+  color: rgb(151, 152, 153);
+  font-size: 1.25rem;
+}
+
+.feature-desc {
+  color: rgb(151, 152, 153);
+  font-size: 0.95rem;
+}
+.cart-list {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 16px rgba(60, 60, 60, 0.07);
+}
+
+.cart-img-wrapper {
+  width: 90px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+.cart-img {
+  max-width: 90px;
+  max-height: 90px;
+  object-fit: contain;
+}
+
+.cart-remove-btn {
+  color: #e74c3c;
+  border-color: #e74c3c;
+  background: #fff;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cart-remove-btn:hover {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.cart-save-btn {
+  color: #2563eb;
+  border-color: #2563eb;
+  background: #fff;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cart-save-btn:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+.cart-qty-select {
+  min-width: 90px;
+  border-radius: 0.75rem;
+}
+
+.cart-remove-all-btn {
+  color: #2563eb;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.coupon-card {
+  border: 1px solid #e5e7eb;
+}
+.coupon-form .coupon-input {
+  font-size: 1rem;
+  color: #6c757d;
+  box-shadow: none;
+  background: #f8fafc;
+  border-radius: 0;
+}
+.coupon-form .coupon-input:focus {
+  background: #fff;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.1);
+}
+.coupon-form .coupon-apply-btn {
+  color: #2563eb;
+  background: transparent;
+  border: 1px solid #e5e7eb;
+  border-radius: 0;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.coupon-form .coupon-apply-btn:hover,
+.coupon-form .coupon-apply-btn:focus {
+  color: #1746a2;
+  background: #f0f4f8;
+}
+.checkout-card {
+  box-shadow: 0 2px 16px rgba(60, 60, 60, 0.07);
+  border-radius: 1rem;
+  background: #fff;
+}
+.checkout-label {
+  color: #555;
+  font-size: 1rem;
+}
+.checkout-value {
+  color: #444;
+  font-size: 1rem;
+}
+.checkout-discount {
+  color: #e74c3c;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.checkout-tax {
+  color: #27ae60;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.checkout-total-label {
+  font-size: 1rem;
+}
+.checkout-total-value {
+  font-size: 1.1rem;
+  color: #222;
+}
+.checkout-btn {
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.4rem;
+  padding: 0.75rem 0;
+}
+.payment-icons {
+  margin-top: 0.5rem;
+}
+.payment-icon {
+  height: 23px;
+  width: auto;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 4px 4px;
+  box-shadow: 0 1px 4px rgba(60, 60, 60, 0.06);
+}
+@media (max-width: 1024px) {
+  .cart-list,
+  .checkout-card {
+    border-radius: 1rem;
+    box-shadow: 0 1px 8px rgba(60, 60, 60, 0.06);
+  }
+
+  .cart-img-wrapper,
+  .cart-img {
+    width: 70px;
+    height: 70px;
+    max-width: 70px;
+    max-height: 70px;
+  }
+
+  .saved-img-wrapper {
+    min-height: 140px;
+  }
+
+  .saved-img-wrapper img {
+    height: 120px;
+  }
+
+  .feature-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .checkout-btn {
+    padding: 0.6rem 0;
+    font-size: 0.95rem;
+  }
+  .coupon-card .coupon-form .form-control,
+  .coupon-card .coupon-form .coupon-apply-btn {
+    font-size: 0.7rem;
+    padding: 2px;
+  }
+  .payment-icons {
+    gap: 0rem !important;
+  }
+  .payment-icon {
+    height: 19px;
+  }
+}
+@media (max-width: 1024px) {
+  .payment-icons {
+    gap: 0.5rem !important;
+  }
+  .payment-icon {
+    height: 35px;
+  }
+   .coupon-card .coupon-form .form-control,
+  .coupon-card .coupon-form .coupon-apply-btn {
+    font-size: 1.2rem;
+  }
+}
+

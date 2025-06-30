@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Brand - E-commerce site</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+  <!-- couston css -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/cart.css" />
+  <link rel="stylesheet" href="css/details.css">
+  <!-- Bootstrap JS Bundle (required for dropdowns) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-3">
+          <div class="brand-logo">
+            <a href="index.html">
+              <img src="Image/Brand/logo-colored.svg" alt="Brand Logo" />
+            </a>
+          </div>
+        </div>
+        <div class="col-9 d-flex justify-content-end">
+          <div class="header-icons">
+            <ul>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-user"></i>
+                  <p>Profile</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-message"></i>
+                  <p>Message</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-heart"></i>
+                  <p>Order</p>
+                </a>
+              </li>
+              <li>
+                <a href="webcart.html">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <p>My cart</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- main -->
+
+  <main>
+    <!-- heading -->
+    <div class="container mt-3">
+      <h3 class="fw-bold">My Cart(3)</h3>
+    </div>
+
+    <!-- cart info-->
+    <section class="cart-info mt-5">
+      <div class="container">
+        <div class="row g-3">
+          <!-- cart -->
+          <div class="col-lg-9">
+            <div class="cart-list bg-white rounded-4 shadow-sm p-4 mb-3">
+              <div class="d-flex align-items-start justify-content-between flex-wrap gap-3 pb-3 border-bottom">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="cart-img-wrapper flex-shrink-0">
+                    <img src="Image/cloth/1.jpg" alt="T-shirt" class="cart-img rounded-3" />
+                  </div>
+                  <div>
+                    <div class="fw-semibold fs-5 mb-1">
+                      T-shirts with multiple colors, for men and lady
+                    </div>
+                    <div class="text-secondary mb-1">
+                      Size: medium, Color: blue, &nbsp; Material: Plastic
+                    </div>
+                    <div class="text-secondary mb-2">
+                      Seller: Artel Market
+                    </div>
+                    <div class="d-flex gap-2">
+                      <button class="btn btn-outline-danger btn-sm cart-remove-btn">
+                        Remove
+                      </button>
+                      <button class="btn btn-outline-primary btn-sm cart-save-btn">
+                        Save for later
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column align-items-end gap-2">
+                  <div class="fw-bold fs-5">$78.99</div>
+                  <select class="form-select cart-qty-select" style="width: 100px">
+                    <option>Qty: 9</option>
+                    <option>Qty: 8</option>
+                    <option>Qty: 7</option>
+                    <option>Qty: 6</option>
+                    <option>Qty: 5</option>
+                    <option>Qty: 4</option>
+                    <option>Qty: 3</option>
+                    <option>Qty: 2</option>
+                    <option>Qty: 1</option>
+                  </select>
+                </div>
+              </div>
+              <div class="d-flex align-items-start justify-content-between flex-wrap gap-3 py-3 border-bottom">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="cart-img-wrapper flex-shrink-0">
+                    <img src="Image/cloth/5.jpg" alt="Backpack" class="cart-img rounded-3" />
+                  </div>
+                  <div>
+                    <div class="fw-semibold fs-5 mb-1">
+                      T-shirts with multiple colors, for men and lady
+                    </div>
+                    <div class="text-secondary mb-1">
+                      Size: medium, Color: blue, &nbsp; Material: Plastic
+                    </div>
+                    <div class="text-secondary mb-2">
+                      Seller: Best factory LLC
+                    </div>
+                    <div class="d-flex gap-2">
+                      <button class="btn btn-outline-danger btn-sm cart-remove-btn">
+                        Remove
+                      </button>
+                      <button class="btn btn-outline-primary btn-sm cart-save-btn">
+                        Save for later
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column align-items-end gap-2">
+                  <div class="fw-bold fs-5">$39.00</div>
+                  <select class="form-select cart-qty-select" style="width: 100px">
+                    <option>Qty: 3</option>
+                    <option>Qty: 2</option>
+                    <option>Qty: 1</option>
+                  </select>
+                </div>
+              </div>
+              <div class="d-flex align-items-start justify-content-between flex-wrap gap-3 py-3">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="cart-img-wrapper flex-shrink-0">
+                    <img src="Image/interior/6.jpg" alt="Lamp" class="cart-img rounded-3" />
+                  </div>
+                  <div>
+                    <div class="fw-semibold fs-5 mb-1">
+                      T-shirts with multiple colors, for men and lady
+                    </div>
+                    <div class="text-secondary mb-1">
+                      Size: medium, Color: blue, &nbsp; Material: Plastic
+                    </div>
+                    <div class="text-secondary mb-2">
+                      Seller: Artel Market
+                    </div>
+                    <div class="d-flex gap-2">
+                      <button class="btn btn-outline-danger btn-sm cart-remove-btn">
+                        Remove
+                      </button>
+                      <button class="btn btn-outline-primary btn-sm cart-save-btn">
+                        Save for later
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column align-items-end gap-2">
+                  <div class="fw-bold fs-5">$170.50</div>
+                  <select class="form-select cart-qty-select" style="width: 100px">
+                    <option>Qty: 1</option>
+                  </select>
+                </div>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-between align-items-center mt-4">
+                <a href="web-list.html" class="btn btn-primary px-4 py-2">
+                  <i class="fa fa-arrow-left me-2"></i>Back to shop
+                </a>
+                <button class="btn btn-link text-primary cart-remove-all-btn">
+                  Remove all
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <!-- coupon -->
+            <div class="coupon-card p-4 bg-white rounded-4 shadow-sm mb-4">
+              <div class="mb-3">
+                <span class="fw-semibold fs-5">Have a coupon?</span>
+              </div>
+              <form class="coupon-form d-flex">
+                <input type="text" class="form-control coupon-input" placeholder="Add coupon"
+                  aria-label="Coupon code" />
+                <button type="submit" class="btn coupon-apply-btn fw-semibold">
+                  Apply
+                </button>
+              </form>
+            </div>
+            <!-- checkout -->
+            <div class="checkout-card p-4 bg-white rounded-4 shadow-sm">
+              <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="checkout-label">Subtotal:</span>
+                  <span class="checkout-value">$1403.97</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="checkout-label">Discount:</span>
+                  <span class="checkout-discount">- $60.00</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="checkout-label">Tax:</span>
+                  <span class="checkout-tax">+ $14.00</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="checkout-total-label fw-bold">Total:</span>
+                  <span class="checkout-total-value fw-bold">$1357.97</span>
+                </div>
+              </div>
+              <button class="btn btn-success w-100 checkout-btn mb-3" type="button">
+                Checkout
+              </button>
+              <div class="d-flex justify-content-between align-items-center gap-2 payment-icons">
+                <img src="Image/icons/amex.svg" alt="American Express" class="payment-icon">
+                <img src="Image/icons/master.svg" alt="Mastercard" class="payment-icon">
+                <img src="Image/icons/paypal.svg" alt="PayPal" class="payment-icon">
+                <img src="Image/icons/visa.svg" alt="Visa" class="payment-icon">
+                <img src="Image/icons/app play.svg" alt="Apple Pay" class="payment-icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- feature items -->
+    <section class="frature items mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-md-4 d-flex justify-content-center mb-3">
+                <div class="feature-item d-flex align-items-center gap-3">
+                  <div class="feature-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                  <div>
+                    <div class="fw-semibold">Secure payment</div>
+                    <div class="feature-desc">Have you ever finally just</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center mb-3">
+                <div class="feature-item d-flex align-items-center gap-3">
+                  <div class="feature-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-message"></i>
+                  </div>
+                  <div>
+                    <div class="fw-semibold">Customer support</div>
+                    <div class="feature-desc">Have you ever finally just</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center mb-3">
+                <div class="feature-item d-flex align-items-center gap-3">
+                  <div class="feature-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-truck"></i>
+                  </div>
+                  <div>
+                    <div class="fw-semibold">Free delivery</div>
+                    <div class="feature-desc">Have you ever finally just</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- saved later products -->
+    <section class="saved-later mt-5 bg-white">
+      <div class="container py-4 rounded-4 shadow-sm">
+        <h3 class="fw-bold mb-4">Saved for later</h3>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="saved-card p-3 rounded-4 h-100 d-flex flex-column align-items-center">
+              <div class="saved-img-wrapper mb-3">
+                <img src="Image/tech/2.jpg" alt="Tablet" class="img-fluid rounded-3" />
+              </div>
+              <div class="w-100">
+                <div class="fw-bold fs-4 mb-1">$99.50</div>
+                <div class="text-secondary mb-3">
+                  GoPro HERO6 4K Action Camera - Black
+                </div>
+                <button class="btn w-100 d-flex align-items-center justify-content-center gap-2 move-cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  Move to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="saved-card p-3 rounded-4 h-100 d-flex flex-column align-items-center">
+              <div class="saved-img-wrapper mb-3">
+                <img src="Image/tech/4.jpg" alt="Phone" class="img-fluid rounded-3" />
+              </div>
+              <div class="w-100">
+                <div class="fw-bold fs-4 mb-1">$99.50</div>
+                <div class="text-secondary mb-3">
+                  GoPro HERO6 4K Action Camera - Black
+                </div>
+                <button class="btn w-100 d-flex align-items-center justify-content-center gap-2 move-cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  Move to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="saved-card p-3 rounded-4 h-100 d-flex flex-column align-items-center">
+              <div class="saved-img-wrapper mb-3">
+                <img src="Image/tech/8.jpg" alt="Watch" class="img-fluid rounded-3" />
+              </div>
+              <div class="w-100">
+                <div class="fw-bold fs-4 mb-1">$99.50</div>
+                <div class="text-secondary mb-3">
+                  GoPro HERO6 4K Action Camera - Black
+                </div>
+                <button class="btn w-100 d-flex align-items-center justify-content-center gap-2 move-cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  Move to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="saved-card p-3 rounded-4 h-100 d-flex flex-column align-items-center">
+              <div class="saved-img-wrapper mb-3">
+                <img src="Image/tech/7.jpg" alt="Laptop" class="img-fluid rounded-3" />
+              </div>
+              <div class="w-100">
+                <div class="fw-bold fs-4 mb-1">$99.50</div>
+                <div class="text-secondary mb-3">
+                  GoPro HERO6 4K Action Camera - Black
+                </div>
+                <button class="btn w-100 d-flex align-items-center justify-content-center gap-2 move-cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  Move to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta banner -->
+    <section class="cta-banner-wrapper mt-5">
+      <div
+        class="container-fluid cta-banner text-white py-4 px-5 rounded-4 d-flex align-items-center justify-content-between">
+        <div>
+          <h4 class="fw-bold mb-2">Super discount on more than 100 USD</h4>
+          <p class="mb-0">Have you ever finally just write dummy info</p>
+        </div>
+        <a href="web-list.html" class="btn btn-warning fw-semibold px-4 py-2 rounded-3">Shop now</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <section class="footer">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+          <div class="d-flex align-items-center mb-2">
+            <div
+              class="footer-logo bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center me-2"
+              style="width: 48px; height: 48px">
+              <i class="fa-solid fa-bag-shopping fa-2x text-primary"></i>
+            </div>
+            <span class="fs-3 fw-bold text-primary">Brand</span>
+          </div>
+          <div class="mb-3 text-secondary" style="max-width: 320px">
+            Best information about the company goes here
+          </div>
+          <div class="d-flex gap-3">
+            <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer-social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+          <div class="fw-bold mb-2">About</div>
+          <ul class="list-unstyled text-secondary">
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="#" class="footer-link">Find store</a></li>
+            <li><a href="#" class="footer-link">Categories</a></li>
+            <li><a href="#" class="footer-link">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+          <div class="fw-bold mb-2">Partnership</div>
+          <ul class="list-unstyled text-secondary">
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="#" class="footer-link">Find store</a></li>
+            <li><a href="#" class="footer-link">Categories</a></li>
+            <li><a href="#" class="footer-link">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+          <div class="fw-bold mb-2">Information</div>
+          <ul class="list-unstyled text-secondary">
+            <li><a href="#" class="footer-link">Help Center</a></li>
+            <li><a href="#" class="footer-link">Money Refund</a></li>
+            <li><a href="#" class="footer-link">Shipping</a></li>
+            <li><a href="#" class="footer-link">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+          <div class="fw-bold mb-2">For users</div>
+          <ul class="list-unstyled text-secondary">
+            <li><a href="#" class="footer-link">Login</a></li>
+            <li><a href="#" class="footer-link">Register</a></li>
+            <li><a href="#" class="footer-link">Settings</a></li>
+            <li><a href="#" class="footer-link">My Orders</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-2">
+          <div class="fw-bold mb-2">Get app</div>
+          <div class="mb-2">
+            <a href="#"><img src="Image/icons/app play.svg" alt="App Store" class="img-fluid mb-2"
+                style="max-width: 140px" /></a>
+          </div>
+          <div>
+            <a href="#"><img src="Image/icons/google play.svg" alt="Google Play" class="img-fluid"
+                style="max-width: 140px" /></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center border-top pt-3 pb-2">
+        <div class="text-secondary small">&copy; 2023 Ecommerce.</div>
+        <div class="d-flex align-items-center mt-2 mt-md-0">
+          <img src="Image/icons/us.png" alt="English" style="height: 20px" class="me-2" />
+          <span class="text-secondary small">English</span>
+          <i class="fa-solid fa-chevron-up ms-2 text-secondary"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

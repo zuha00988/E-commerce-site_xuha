@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Brand - E-commerce site</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Bootstrap JS Bundle (required for dropdowns) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-3">
+          <div class="brand-logo">
+            <a href="index.html">
+              <img src="Image/Brand/logo-colored.svg" alt="Brand Logo" />
+            </a>
+          </div>
+        </div>
+        <div class="col-6">
+          <form class="search-bar d-flex flex-nowrap">
+            <input type="text" placeholder="Search" />
+            <select>
+              <option>All category</option>
+              <option>Electronics</option>
+              <option>Fashion</option>
+              <option>Home</option>
+            </select>
+            <button type="submit" class="btn-search">Search</button>
+          </form>
+        </div>
+        <div class="col-3">
+          <div class="header-icons">
+            <ul>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-user"></i>
+                  <p>Profile</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-message"></i>
+                  <p>Message</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-heart"></i>
+                  <p>Order</p>
+                </a>
+              </li>
+              <li>
+                <a href="webcart.html">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <p>My cart</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--  navbar -->
+  <div class="navbar-container">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center py-1">
+        <!-- Left nav -->
+        <nav class="d-flex align-items-center gap-4">
+          <button class="btn btn-link p-0 me-2" style="font-size: 18px;">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <a href="#">All category</a>
+          <a href="#">Hot offers</a>
+          <a href="#">Gift boxes</a>
+          <a href="#">Projects</a>
+          <a href="#">Menu item</a>
+          <div class="dropdown">
+            <a class="text-dark text-decoration-none small fw-normal dropdown-toggle" href="#" id="helpDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Help
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="helpDropdown">
+              <li><a class="dropdown-item" href="#">Ask question</a></li>
+              <li><a class="dropdown-item" href="#">Refund policy</a></li>
+              <li><a class="dropdown-item" href="#">Return policy</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Right nav -->
+        <nav class="d-flex align-items-center gap-4">
+          <div class="dropdown">
+            <a class="text-dark text-decoration-none small fw-normal dropdown-toggle" href="#" id="langDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              English, USD
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="langDropdown">
+              <li><a class="dropdown-item" href="#">Urdu, PAK</a></li>
+              <li><a class="dropdown-item" href="#">Indian, IND</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a class="text-dark text-decoration-none small fw-normal dropdown-toggle d-flex align-items-center" href="#"
+              id="shipDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              Ship to
+              <img src="Image/icons/germany.png" alt="DE" style="height: 16px; margin-left: 6px;" />
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="shipDropdown">
+              <li><a class="dropdown-item" href="#"><img src="Image/icons/australia.png" style="height: 18px;"></a></li>
+              <li><a class="dropdown-item" href="#"><img src="Image/icons/chania.png" style="height: 18px;"></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- main -->
+
+  <main>
+
+    <!-- hero section -->
+    <section class="hero section">
+      <div class="main-section">
+        <div class="container">
+          <div class="row">
+            <!-- Sidebar Categories -->
+            <div class="col-md-3">
+              <ul class="list-group sidebar-categories">
+                <li class="list-group-item active">
+                  </i>Automobiles
+                </li>
+                <li class="list-group-item">
+                  </i>Clothes and wear
+                </li>
+                <li class="list-group-item">
+                  </i>Home interiors
+                </li>
+                <li class="list-group-item">
+                  </i>Computer and tech
+                </li>
+                <li class="list-group-item">
+                  </i>Tools, equipments
+                </li>
+                <li class="list-group-item">
+                  </i>Sports and outdoor
+                </li>
+                <li class="list-group-item">
+                  </i>Animal and pets
+                </li>
+                <li class="list-group-item">
+                  </i>Machinery tools
+                </li>
+                <li class="list-group-item">
+                  </i>More category
+                </li>
+              </ul>
+            </div>
+            <!-- Main Banner -->
+            <div class="col-md-6">
+              <div class="main-banner position-relative d-flex align-items-center justify-content-start p-4">
+                <div>
+                  <h2 class="fw-normal mb-2" style="font-size:2.2rem;">Latest trending</h2>
+                  <h1 class="fw-bold mb-4" style="font-size:2.7rem;">Electronic item</h1>
+                  <a href="#" class="btn btn-light btn-lg fw-semibold px-4 py-2 shadow-sm">Learn more</a>
+                </div>
+              </div>
+            </div>
+            <!-- Right Sidebar -->
+            <div class="col-md-3">
+              <div class="user-card p-3 mb-3 rounded">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-user-circle fa-2x me-3 text-secondary"></i>
+                  <div>
+                    <div class="fw-semibold">Hi, user</div>
+                    <div class="text-muted small">let’s get stated</div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary w-100 mb-2">Join now</a>
+                <a href="#" class="btn btn-outline-primary w-100">Log in</a>
+              </div>
+              <div class="promo-card p-3 mb-3 rounded">
+                <div class="fw-semibold-1">Get US $10 off<br>with a new <br>supplier</div>
+              </div>
+              <div class="promo-card-2 p-3 rounded">
+                <div class="fw-semibold-1">Send quotes with<br>supplier <br> preferences</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sales -->
+    <section class="sales section">
+      <div class="container deals-offers-section my-4 p-4 rounded">
+        <div class="row align-items-center">
+          <!-- Left: Deals and Timer -->
+          <div class="col-md-3 mb-4 mb-md-0 sales-left">
+            <div>
+              <h3 class="fw-bold mb-1">Deals and offers</h3>
+              <div class="text-secondary mb-3">Hygiene equipments</div>
+              <div class="d-flex gap-2">
+                <div class="timer-box text-center">
+                  <div class="timer-value">04</div>
+                  <div class="timer-label">Days</div>
+                </div>
+                <div class="timer-box text-center">
+                  <div class="timer-value">13</div>
+                  <div class="timer-label">Hour</div>
+                </div>
+                <div class="timer-box text-center">
+                  <div class="timer-value">34</div>
+                  <div class="timer-label">Min</div>
+                </div>
+                <div class="timer-box text-center">
+                  <div class="timer-value">56</div>
+                  <div class="timer-label">Sec</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Right: Product Cards -->
+          <div class="col-md-9">
+            <div class="row cards-container">
+              <div class="col-6 col-md-2 text-center deal-card">
+                <a href="web-list.html">
+                  <img src="Image/tech/8.jpg" alt="Smart watches" class="deal-img mb-2" />
+                  <div class="deal-title mb-1">Smart watches</div>
+                  <div class="deal-discount">-25%</div>
+                </a>
+              </div>
+              <div class="col-6 col-md-2 text-center deal-card">
+                <a href="web-list.html">
+                  <img src="Image/tech/7.jpg" alt="Laptops" class="deal-img mb-2" />
+                  <div class="deal-title mb-1">Laptops</div>
+                  <div class="deal-discount">-15%</div>
+                </a>
+              </div>
+              <div class="col-6 col-md-2 text-center deal-card">
+                <a href="web-list.html">
+                  <img src="Image/tech/6.jpg" alt="GoPro cameras" class="deal-img mb-2" />
+                  <div class="deal-title mb-1">GoPro cameras</div>
+                  <div class="deal-discount">-40%</div>
+                </a>
+              </div>
+              <div class="col-6 col-md-2 text-center deal-card">
+                <a href="web-list.html">
+                  <img src="Image/tech/10.jpg" alt="Headphones" class="deal-img mb-2" />
+                  <div class="deal-title mb-1">Headphones</div>
+                  <div class="deal-discount">-25%</div>
+                </a>
+              </div>
+              <div class="col-6 col-md-2 text-center deal-card">
+                <a href="web-list.html">
+                  <img src="Image/tech/3.jpg" alt="Canon cameras" class="deal-img mb-2" />
+                  <div class="deal-title mb-1">Canon cameras</div>
+                  <div class="deal-discount">-25%</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- block elements -->
+    <section class="block-elements mb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="home-outdoor-block">
+              <div class="box">
+                <div class="left-aside">
+                  <div class="overlap-group">
+                    <img class="group" src="Image/icons/bg-block section.jpg" />
+                    <div class="button-btn-basic">
+                      <div class="button-base-text-md">
+                        <div class="text">Source now</div>
+                      </div>
+                    </div>
+                    <div class="consumer-electronics">Home and outdoor</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 ps-0">
+            <div class="card-container">
+              <div class="row">
+                <div class="col-3">
+                  <a href="web-grid-view.html">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-7">
+                          <div class="category-card h-100">
+                            <div class="mb-2 fw-semibold">Soft chairs</div>
+                            <div class="text-secondary small">From<br><span>USD 19</span></div>
+                          </div>
+                        </div>
+                        <div class="col-5 mt-5">
+                          <img src="Image/interior/1.jpg" alt="Soft chairs"
+                            class="img-fluid mt-2 d-block mx-auto category-img" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3">
+                  <a href="web-grid-view.html">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-7">
+                          <div class="category-card h-100">
+                            <div class="mb-2 fw-semibold">Decor Lamps</div>
+                            <div class="text-secondary small">From<br><span>USD 19</span></div>
+                          </div>
+                        </div>
+                        <div class="col-5 mt-5">
+                          <img src="Image/interior/6.jpg" alt="Soft chairs"
+                            class="img-fluid mt-2 d-block mx-auto category-img" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3">
+                  <a href="web-grid-view.html">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-7">
+                          <div class="category-card h-100">
+                            <div class="mb-2 fw-semibold">Sofa & Chairs</div>
+                            <div class="text-secondary small">From<br><span>USD 19</span></div>
+                          </div>
+                        </div>
+                        <div class="col-5 mt-5">
+                          <img src="Image/interior/5.jpg" alt="Soft chairs"
+                            class="img-fluid mt-2 d-block mx-auto category-img" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3">
+                  <a href="web-grid-view.html">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-7">
+                          <div class="category-card h-100">
+                            <div class="mb-2 fw-semibold">Indoor Decor</div>
+                            <div class="text-secondary small">From<br><span>USD 19</span></div>
+                          </div>
+                        </div>
+                        <div class="col-5 mt-5">
+                          <img src="Image/interior/3.jpg" alt="Soft chairs"
+                            class="img-fluid mt-2 d-block mx-auto category-img" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3">
+                  <a href="web-grid-view.html">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-7">
+                          <div class="category-card p-3 h-100 rounded">
+                            <div class="mb-2 fw-semibold">Kitchen Mixers</div>
+                            <div class="text-secondary small">From<br><span>USD 19</span></div>
+                          </div>
+                        </div>
+                        <div class="col-5 mt-5">
+                          <img src="Image/interior/9.jpg" alt="Soft chairs"
+                            class="img-fluid mt-2 d-block mx-auto category-img" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3">
+                  <a href="web-grid-view.html">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-7">
+                          <div class="category-card p-3 h-100 rounded">
+                            <div class="mb-2 fw-semibold">Kitchen Blendr</div>
+                            <div class="text-secondary small">From<br><span>USD 19</span></div>
+                          </div>
+                        </div>
+                        <div class="col-5 mt-5">
+                          <img src="Image/interior/8.jpg" alt="Soft chairs"
+                            class="img-fluid mt-2 d-block mx-auto category-img" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3">
+                  <a href="web-grid-view.html">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-7">
+                          <div class="category-card p-3 h-100 rounded">
+                            <div class="mb-2 fw-semibold">Home Decor</div>
+                            <div class="text-secondary small">From<br><span>USD 19</span></div>
+                          </div>
+                        </div>
+                        <div class="col-5 mt-5">
+                          <img src="Image/interior/7.jpg" alt="Soft chairs"
+                            class="img-fluid mt-2 d-block mx-auto category-img" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3">
+                  <a href="web-grid-view.html">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-7">
+                          <div class="category-card p-3 h-100 rounded">
+                            <div class="mb-2 fw-semibold">Indoor Plants</div>
+                            <div class="text-secondary small">From<br><span>USD 19</span></div>
+                          </div>
+                        </div>
+                        <div class="col-5 mt-5">
+                          <img src="Image/interior/4.jpg" alt="Soft chairs"
+                            class="img-fluid mt-2 d-block mx-auto category-img" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- block elements -->
+    <section class="block-elements mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="home-outdoor-block">
+              <div class="box">
+                <div class="left-aside">
+                  <div class="overlap-group">
+                    <img class="group" src="Image/icons/block-element-2.png" />
+                    <div class="button-btn-basic">
+                      <div class="button-base-text-md">
+                        <div class="text">Source now</div>
+                      </div>
+                    </div>
+                    <div class="consumer-electronics">Electronics and Gadgets</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 ps-0">
+            <div class="card-container">
+              <div class="row">
+                <div class="col-3">
+                  <a href="web-list.html">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-7">
+                          <div class="category-card h-100">
+                            <div class="mb-2 fw-semibold">Smart Watches</div>
+                            <div class="text-secondary small">From<br><span>USD 19</span></div>
+                          </div>
+                        </div>
+                        <div class="col-5 mt-5">
+                          <img src="Image/tech/8.jpg" alt="Soft chairs"
+                            class="img-fluid mt-2 d-block mx-auto category-img" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3">
+                  <a href="web-list.html">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-7">
+                          <div class="category-card h-100">
+                            <div class="mb-2 fw-semibold">Digital Cameras</div>
+                            <div class="text-secondary small">From<br><span>USD 19</span></div>
+                          </div>
+                        </div>
+                        <div class="col-5 mt-5">
+                          <img src="Image/tech/6.jpg" alt="Soft chairs"
+                            class="img-fluid mt-2 d-block mx-auto category-img" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3">
+                  <a href="web-list.html">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-7">
+                          <div class="category-card h-100">
+                            <div class="mb-2 fw-semibold">Smart Headphone</div>
+                            <div class="text-secondary small">From<br><span>USD 19</span></div>
+                          </div>
+                        </div>
+                        <div class="col-5 mt-5">
+                          <img src="Image/tech/9.jpg" alt="Soft chairs"
+                            class="img-fluid mt-2 d-block mx-auto category-img" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3">
+                  <a href="web-list.html">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-7">
+                          <div class="category-card h-100">
+                            <div class="mb-2 fw-semibold">Electric Kattle</div>
+                            <div class="text-secondary small">From<br><span>USD 19</span></div>
+                          </div>
+                        </div>
+                        <div class="col-5 mt-5">
+                          <img src="Image/tech/10.jpg" alt="Soft chairs"
+                            class="img-fluid mt-2 d-block mx-auto category-img" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3">
+                  <a href="web-list.html">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-7">
+                          <div class="category-card p-3 h-100 rounded">
+                            <div class="mb-2 fw-semibold">Game Set</div>
+                            <div class="text-secondary small">From<br><span>USD 19</span></div>
+                          </div>
+                        </div>
+                        <div class="col-5 mt-5">
+                          <img src="Image/tech/5.jpg" alt="Soft chairs"
+                            class="img-fluid mt-2 d-block mx-auto category-img" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3">
+                  <a href="web-list.html">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-7">
+                          <div class="category-card p-3 h-100 rounded">
+                            <div class="mb-2 fw-semibold">Laptop & PC</div>
+                            <div class="text-secondary small">From<br><span>USD 19</span></div>
+                          </div>
+                        </div>
+                        <div class="col-5 mt-5">
+                          <img src="Image/tech/7.jpg" alt="Soft chairs"
+                            class="img-fluid mt-2 d-block mx-auto category-img" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3">
+                  <a href="web-list.html">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-7">
+                          <div class="category-card p-3 h-100 rounded">
+                            <div class="mb-2 fw-semibold">Smart Tablets</div>
+                            <div class="text-secondary small">From<br><span>USD 19</span></div>
+                          </div>
+                        </div>
+                        <div class="col-5 mt-5">
+                          <img src="Image/tech/2.jpg" alt="Soft chairs"
+                            class="img-fluid mt-2 d-block mx-auto category-img" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-3">
+                  <a href="web-list.html">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-7">
+                          <div class="category-card p-3 h-100 rounded">
+                            <div class="mb-2 fw-semibold">Mobilephones</div>
+                            <div class="text-secondary small">From<br><span>USD 19</span></div>
+                          </div>
+                        </div>
+                        <div class="col-5 mt-5">
+                          <img src="Image/tech/3.jpg" alt="Soft chairs"
+                            class="img-fluid mt-2 d-block mx-auto category-img" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- secion qoutes -->
+    <section class="qoute mt-5">
+      <div class="container">
+        <div class="position-relative">
+          <!-- Background image -->
+          <img src="Image/icons/bg.png" alt="Warehouse"
+            class="w-100 h-100 position-absolute top-0 start-0 img-container">
+          <!-- Blue overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 overlay-layer"></div>
+          <div class="row ps-2 h-100 position-relative" style="z-index: 3;">
+            <div class="col-lg-7 text-white py-5">
+              <h2 class="fw-bold display-5 mb-3">An easy way to send<br>requests to all suppliers</h2>
+              <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit, sed do eiusmod tempor
+                incididunt.</p>
+            </div>
+            <div class="col-lg-5 d-flex justify-content-center py-5">
+              <div class="bg-white rounded shadow p-4 w-100" style="max-width: 400px;">
+                <h4 class="fw-bold mb-3">Send quote to suppliers</h4>
+                <form>
+                  <div class="mb-3">
+                    <input type="text" class="form-control form-control-lg" placeholder="What item you need?" />
+                  </div>
+                  <div class="mb-3">
+                    <textarea class="form-control" rows="3" placeholder="Type more details"></textarea>
+                  </div>
+                  <div class="row g-2 mb-3">
+                    <div class="col">
+                      <input type="number" class="form-control" placeholder="Quantity" />
+                    </div>
+                    <div class="col-auto">
+                      <select class="form-select">
+                        <option>Pcs</option>
+                        <option>Kg</option>
+                        <option>Liters</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-lg w-100">Send inquiry</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- recomended section -->
+    <section class="recommended mt-5">
+      <div class="container">
+        <h2 class="fw-bold mb-4" style="font-size:1.8rem;">Recommended items</h2>
+        <div class="row g-4">
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="web-list.html">
+              <div class="card recommended-card h-100">
+                <img src="Image/cloth/1.jpg" class="card-img-top" alt="T-shirts with multiple colors, for men">
+                <div class="card-body">
+                  <div class="fw-semibold mb-1 price-text">$10.30</div>
+                  <div class="card-text text-secondary small">T-shirts with multiple colors, for men</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="web-list.html">
+              <div class="card recommended-card h-100">
+                <img src="Image/cloth/4.jpg" class="card-img-top" alt="Jeans shorts for men blue color">
+                <div class="card-body">
+                  <div class="fw-semibold mb-1 price-text">$10.30</div>
+                  <div class="card-text text-secondary small">Jeans shorts for men blue color</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="web-list.html">
+              <div class="card recommended-card h-100">
+                <img src="Image/cloth/3.jpg" class="card-img-top" alt="Brown winter coat medium size">
+                <div class="card-body">
+                  <div class="fw-semibold mb-1 price-text">$12.50</div>
+                  <div class="card-text text-secondary small">Brown winter coat medium size</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="web-list.html">
+              <div class="card recommended-card h-100">
+                <img src="Image/cloth/5.jpg" class="card-img-top" alt="Jeans bag for travel for men">
+                <div class="card-body">
+                  <div class="fw-semibold mb-1 price-text">$34.00</div>
+                  <div class="card-text text-secondary small">Jeans bag for travel for men</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="web-list.html">
+              <div class="card recommended-card h-100">
+                <img src="Image/cloth/6.jpg" class="card-img-top" alt="Leather wallet">
+                <div class="card-body">
+                  <div class="fw-semibold mb-1 price-text">$99.00</div>
+                  <div class="card-text text-secondary small">Leather wallet</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="web-list.html">
+              <div class="card recommended-card h-100">
+                <img src="Image/tech/6.jpg" class="card-img-top" alt="Canon camera black, 100x zoom">
+                <div class="card-body">
+                  <div class="fw-semibold mb-1 price-text">$9.99</div>
+                  <div class="card-text text-secondary small">Canon camera black, 100x zoom</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="web-list.html">
+              <div class="card recommended-card h-100">
+                <img src="Image/tech/5.jpg" class="card-img-top" alt="Headset for gaming with mic">
+                <div class="card-body">
+                  <div class="fw-semibold mb-1 price-text">$8.99</div>
+                  <div class="card-text text-secondary small">Headset for gaming with mic</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="web-list.html">
+              <div class="card recommended-card h-100">
+                <img src="Image/tech/8.jpg" class="card-img-top" alt="Smartwatch silver color modern">
+                <div class="card-body">
+                  <div class="fw-semibold mb-1 price-text">$10.30</div>
+                  <div class="card-text text-secondary small">Smartwatch silver color modern</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="web-list.html">
+              <div class="card recommended-card h-100">
+                <img src="Image/cloth/6.jpg" class="card-img-top" alt="Blue wallet for men leather metarial">
+                <div class="card-body">
+                  <div class="fw-semibold mb-1 price-text">$10.30</div>
+                  <div class="card-text text-secondary small">Blue wallet for men leather metarial</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="web-list.html">
+              <div class="card recommended-card h-100">
+                <img src="Image/cloth/5.jpg" class="card-img-top" alt="Jeans bag for travel for men">
+                <div class="card-body">
+                  <div class="fw-semibold mb-1 price-text">$80.95</div>
+                  <div class="card-text text-secondary small">Jeans bag for travel for men</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="web-list.html">
+              <div class="card recommended-card h-100">
+                <img src="Image/cloth/1.jpg" class="card-img-top" alt="T-shirts with multiple colors, for men">
+                <div class="card-body">
+                  <div class="fw-semibold mb-1 price-text">$10.30</div>
+                  <div class="card-text text-secondary small">T-shirts with multiple colors, for men</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="web-list.html">
+              <div class="card recommended-card h-100">
+                <img src="Image/cloth/4.jpg" class="card-img-top" alt="Jeans shorts for men blue color">
+                <div class="card-body">
+                  <div class="fw-semibold mb-1 price-text">$10.30</div>
+                  <div class="card-text text-secondary small">Jeans shorts for men blue color</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our extera services -->
+    <section class="services mt-5">
+      <div class="container">
+        <h2 class="fw-bold mb-4" style="font-size:1.8rem;">Our Extera Services</h2>
+        <div class="row g-4">
+          <!-- 1 -->
+          <div class="col-md-3">
+            <div class="services-card">
+              <img src="Image/icons/services1.png" alt="Product Monitoring" />
+              <div class="services-card-content">
+                <div class="services-icon-badge">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="services-card-title">Source from Industry Hubs</div>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="col-md-3">
+            <div class="services-card">
+              <img src="Image/icons/services2.png" alt="Product Monitoring" />
+              <div class="services-card-content">
+                <div class="services-icon-badge">
+                  <i class="fa-solid fa-warehouse"></i>
+                </div>
+                <div class="services-card-title">Customize Your Products your items</div>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="col-md-3">
+            <div class="services-card">
+              <img src="Image/icons/services3.png" alt="Product Monitoring" />
+              <div class="services-card-content">
+                <div class="services-icon-badge">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </div>
+                <div class="services-card-title">Fast, reliable shipping by ocean or air</div>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="col-md-3">
+            <div class="services-card">
+              <img src="Image/icons/services4.png" alt="Product Monitoring" />
+              <div class="services-card-content">
+                <div class="services-icon-badge">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="services-card-title">Product monitoring and inspection</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- supplied by region -->
+    <section class="region mt-5">
+      <div class="container">
+        <h2 class="fw-bold mb-4" style="font-size:1.8rem;">Our Extera Services</h2>
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-2 mb-4 me-4 region-item">
+            <div class="d-flex align-items-center">
+              <img src="Image/icons/uae.png" alt="Arabic Emirates" class="region-flag me-2" />
+              <div>
+                <div class="region-title">Arabic Emirates</div>
+                <div class="region-link">shopname.ae</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 me-4 region-item">
+            <div class="d-flex align-items-center">
+              <img src="Image/icons/australia.png" alt="Australia" class="region-flag me-2" />
+              <div>
+                <div class="region-title">Australia</div>
+                <div class="region-link">shopname.au</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 me-4 region-item">
+            <div class="d-flex align-items-center">
+              <img src="Image/icons/us.png" alt="United States" class="region-flag me-2" />
+              <div>
+                <div class="region-title">United States</div>
+                <div class="region-link">shopname.us</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 me-4 region-item">
+            <div class="d-flex align-items-center">
+              <img src="Image/icons/russia.png" alt="Russia" class="region-flag me-2" />
+              <div>
+                <div class="region-title">Russia</div>
+                <div class="region-link">shopname.ru</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 me-4 region-item">
+            <div class="d-flex align-items-center">
+              <img src="Image/icons/italy.png" alt="Italy" class="region-flag me-2" />
+              <div>
+                <div class="region-title">Italy</div>
+                <div class="region-link">shopname.it</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 me-4 region-item">
+            <div class="d-flex align-items-center">
+              <img src="Image/icons/denmark.png" alt="Denmark" class="region-flag me-2" />
+              <div>
+                <div class="region-title">Denmark</div>
+                <div class="region-link">denmark.com.dk</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 me-4 region-item">
+            <div class="d-flex align-items-center">
+              <img src="Image/icons/france.png" alt="France" class="region-flag me-2" />
+              <div>
+                <div class="region-title">France</div>
+                <div class="region-link">shopname.com.fr</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 me-4 region-item">
+            <div class="d-flex align-items-center">
+              <img src="Image/icons/uae.png" alt="Arabic Emirates" class="region-flag me-2" />
+              <div>
+                <div class="region-title">Arabic Emirates</div>
+                <div class="region-link">shopname.ae</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 me-4 region-item">
+            <div class="d-flex align-items-center">
+              <img src="Image/icons/chania.png" alt="China" class="region-flag me-2" />
+              <div>
+                <div class="region-title">China</div>
+                <div class="region-link">shopname.se</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 me-4 region-item">
+            <div class="d-flex align-items-center">
+              <img src="Image/icons/britain.png" alt="Great Britain" class="region-flag me-2" />
+              <div>
+                <div class="region-title">Great Britain</div>
+                <div class="region-link">shopname.co.uk</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- news sletter -->
+    <section class="news-sletter mt-3 pb-4">
+      <div class="container">
+        <div class="newsletter-wrapper">
+          <div class="newsletter-title">Subscribe on our newsletter</div>
+          <div class="newsletter-desc">
+            Get daily news on upcoming offers from many suppliers all over the world
+          </div>
+          <form class="newsletter-form" autocomplete="off">
+            <div class="newsletter-input-group">
+              <i class="fa-regular fa-envelope"></i>
+              <input type="email" class="newsletter-input" placeholder="Email" required>
+            </div>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <section class="footer">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+          <div class="d-flex align-items-center mb-2">
+            <div
+              class="footer-logo bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center me-2"
+              style="width:48px;height:48px;">
+              <i class="fa-solid fa-bag-shopping fa-2x text-primary"></i>
+            </div>
+            <span class="fs-3 fw-bold text-primary">Brand</span>
+          </div>
+          <div class="mb-3 text-secondary" style="max-width:320px;">
+            Best information about the company goes here
+          </div>
+          <div class="d-flex gap-3">
+            <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer-social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+          <div class="fw-bold mb-2">About</div>
+          <ul class="list-unstyled text-secondary">
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="#" class="footer-link">Find store</a></li>
+            <li><a href="#" class="footer-link">Categories</a></li>
+            <li><a href="#" class="footer-link">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+          <div class="fw-bold mb-2">Partnership</div>
+          <ul class="list-unstyled text-secondary">
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="#" class="footer-link">Find store</a></li>
+            <li><a href="#" class="footer-link">Categories</a></li>
+            <li><a href="#" class="footer-link">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+          <div class="fw-bold mb-2">Information</div>
+          <ul class="list-unstyled text-secondary">
+            <li><a href="#" class="footer-link">Help Center</a></li>
+            <li><a href="#" class="footer-link">Money Refund</a></li>
+            <li><a href="#" class="footer-link">Shipping</a></li>
+            <li><a href="#" class="footer-link">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+          <div class="fw-bold mb-2">For users</div>
+          <ul class="list-unstyled text-secondary">
+            <li><a href="#" class="footer-link">Login</a></li>
+            <li><a href="#" class="footer-link">Register</a></li>
+            <li><a href="#" class="footer-link">Settings</a></li>
+            <li><a href="#" class="footer-link">My Orders</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-2">
+          <div class="fw-bold mb-2">Get app</div>
+          <div class="mb-2">
+            <a href="#"><img src="Image/icons/app play.svg" alt="App Store" class="img-fluid mb-2"
+                style="max-width:140px;"></a>
+          </div>
+          <div>
+            <a href="#"><img src="Image/icons/google play.svg" alt="Google Play" class="img-fluid"
+                style="max-width:140px;"></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class=" container d-flex flex-column flex-md-row justify-content-between align-items-center border-top pt-3 pb-2">
+        <div class="text-secondary small">&copy; 2023 Ecommerce.</div>
+        <div class="d-flex align-items-center mt-2 mt-md-0">
+          <img src="Image/icons/us.png" alt="English" style="height:20px;" class="me-2">
+          <span class="text-secondary small">English</span>
+          <i class="fa-solid fa-chevron-up ms-2 text-secondary"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
